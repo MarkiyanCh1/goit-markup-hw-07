@@ -400,35 +400,19 @@ header {
   padding-top: 112px;
   padding-bottom: 112px;
   background-color: var(--dark-color);
-    /* 0 > 427px */
+    /* 0 > 767px */
   background-image: var(--bg-gradient), url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-/* 0 > 427px (2x)*/
-@media screen and (min-device-pixel-ratio: 2) and (max-width: 427px),
-screen and (min-resolution: 192dpi) and (max-width: 427px),
-screen and (min-resolution: 2dppx) and (max-width: 427px) {
+/* 0 > 767px (2x)*/
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
         background-image: var(--bg-gradient), url(../images/hero-mobile@2x.jpg)
-    }
-}
-
-/* 428px > 727px */
-@media screen and (min-width: 428px) and (max-width: 767px) {
-    .hero {
-        background-image: var(--bg-gradient), url(../images/hero-tablet.jpg);
-    }
-}
-
-/* 428px > 727px (2x)*/
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 428px) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (min-width: 428px) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (min-width: 428px) and (max-width: 767px) {
-    .hero {
-        background-image: var(--bg-gradient), url(../images/hero-tablet@2x.jpg)
     }
 }
 
@@ -494,6 +478,10 @@ screen and (min-resolution: 2dppx) and (min-width: 428px) and (max-width: 767px)
   background-color: var(--light-color);
 }
 
+.team-title {
+  margin-bottom: 72px;
+}
+
 /** Team section cards style */
 @media screen and (max-width: 767px) {
   .team-item {
@@ -518,7 +506,7 @@ screen and (min-resolution: 2dppx) and (min-width: 428px) and (max-width: 767px)
   background-color: var(--white-background-color);
 }
 
-.team-name {
+.team-subtitle {
   margin-bottom: 8px;
 }
 
@@ -560,6 +548,7 @@ screen and (min-resolution: 2dppx) and (min-width: 428px) and (max-width: 767px)
 }
 
 .customer-link {
+  width: 190px;
   display: flex;
   justify-content: center;
   align-items: center;

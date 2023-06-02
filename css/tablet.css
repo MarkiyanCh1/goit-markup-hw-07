@@ -64,18 +64,18 @@
 
 /** Hero section */
 .hero {
-    /* 768px > + */
-    background-image: var(--bg-gradient), url(../images/hero.jpg);
+    background-image: var(--bg-gradient), url(../images/hero-tablet.jpg);
 }
 
-/* 768px > + (2x)*/
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-screen and (min-resolution: 192dpi) and (min-width: 768px),
-screen and (min-resolution: 2dppx) and (min-width: 768px) {
+/* 768px > 1157px (2x)*/
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1157px),
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1157px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1157px) {
     .hero {
-        background-image: var(--bg-gradient), url(../images/hero@2x.jpg)
+        background-image: var(--bg-gradient), url(../images/hero-tablet@2x.jpg)
     }
 }
+
 
 @media screen and (max-width: 1157px) {
     .hero-title {
@@ -133,6 +133,10 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 .customer-item {
     max-width: 168px;
 }
+
+.customer-link {
+    width: 168px;
+  }
 
 /** Filter section */
 .filter {

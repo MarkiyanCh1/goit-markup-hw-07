@@ -32,7 +32,20 @@
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
+
+    /* 1158px > + */
+    background-image: var(--bg-gradient), url(../images/hero.jpg);
 }
+
+/* 1158px > + (2x)*/
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+    .hero {
+        background-image: var(--bg-gradient), url(../images/hero@2x.jpg)
+    }
+}
+
 .hero-title {
     max-width: 496px;
     margin-bottom: 48px;
